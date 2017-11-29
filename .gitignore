@@ -1,0 +1,12 @@
+*.gem
+*.rbc
+.idea
+.DS_Store
+/.config
+/tmp/
+
+www/_out
+.sass-cache
+
+Gemfile.lock
+.ruby-*
