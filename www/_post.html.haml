@@ -1,0 +1,36 @@
+!!!
+%html.no-js{lang: 'en' }
+  %head
+    %title
+      Prozac Blues
+    %meta{ charset: 'utf-8'}
+
+    %meta{ content: 'index, follow', name: 'robots'}
+    %meta{ content: '', name: 'description'}
+    %meta{ content: '', name: 'author'}
+
+    %script{ src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js' }
+
+    %link{ href: '', rel: 'icon' }
+    %link{ type: 'text/css', rel: 'stylesheet', href: href('/prozacblues.css') }
+    %link{ href: '', rel: 'alternate', title: 'RSS', type: 'application/rss+xml' }
+
+    = main_header_image
+
+  %body
+
+    ~ include('/_header.html.haml')
+
+    .main.grid.blog
+
+      %article.col-3-4
+
+        = yield
+
+      %aside.col-1-4
+
+        ~ include('/_post_meta.html.haml')
+
+    ~ include('/_post_siblings.html.haml')
+
+    ~ include('/_footer.html.haml')
