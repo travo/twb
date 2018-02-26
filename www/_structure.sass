@@ -1,0 +1,102 @@
+$pad: 1em
+
+.flex-grid
+  display: flex
+
+.col
+  flex: 1
+  padding: 0 $pad
+  margin: 1em auto
+
+.module
+  padding: $pad
+  background: #eee
+
+body
+  background-color: #111
+  color: #FFF
+  margin: 0
+
+.banner
+  max-height: 600px
+  min-height: 400px
+  background: url('/images/twb-main-banner.png') transparent top center no-repeat
+  background-size: 100%
+  position: relative
+
+.banner-text
+  display: block
+  margin: auto 0 auto $pad
+  position: absolute
+  bottom: 0
+
+figure
+  position: relative
+  margin: 0 auto
+  width: $main-width
+  max-width: $max-width
+  color: #EFEFEF
+
+.masthead
+  padding: 0 1em
+  position: absolute
+  h1
+    line-height: 0.8em
+    font-size: 4.0em
+    text-transform: uppercase
+  p
+    font-family: 'ChunkFive'
+
+article
+  margin: 0 auto
+  width: $main-width
+  max-width: $max-width
+  position: relative
+
+  &.blog
+    article
+      p:first-of-type
+        font-size: 1.2em
+        line-height: 1.6em
+
+figure
+  &.small
+    display: block
+    float: left
+    margin-right: 1em
+    padding-bottom: 1em
+    img
+      max-width: 250px
+      max-height: 250px
+
+.clear
+  clear: both
+
+.f-right
+  float: right
+
+.f-left
+  float: left
+
+.padded-lr
+  padding-left: 1em
+  padding-right: 1em
+
+.padded-tb
+  padding-top: 1em
+  padding-bottom: 1em
+
+.siblings
+  margin-top: 0.25em
+  margin-bottom: 2em
+  padding: 0.5em 1em
+  a
+    text-align: center
+    width: 6em
+  .next
+    margin-right: 1em
+
+footer
+  max-width: $max-width
+  width: $main-width
+  margin: 0 auto
